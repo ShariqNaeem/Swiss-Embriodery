@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("../images/red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Sniglet', cursive;
+    font-weight: lighter;
+    
+}
+
+h1 {
+    color: #fff;
+    font-size: 240%;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+
+}
+
+
+.flexbox{
+    display: flex;
+   
+    padding: 16% 4%;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.clearfix::after{
+    content : "";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    
+}
+
+.row {
+    padding: 0 1%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: darkred;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    /* border: 1 solid #fff; */
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    
+    float: right;
+    margin-top: 40px;
+    
+}
+
+.main-nav li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+
+}
+
+.main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    font-weight:100;
+    padding: 4px 4px;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #fff ;
+}
+
+.bars-icon {
+    display: none;  
+}
+
+.main-content-header{
+    width: 92%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1 solid #fff;
+}
+
+#fixed-button{
+    color: #fff;
+    position: fixed;
+    bottom: 7%;
+    right: 7%; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 1px solid #fff;  
+    background-color: transparent;
+    width: 240px;
+    text-align: center;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn:hover {
+    color : rgb(156, 28, 28);
+    background-color: #fff;
+  
+}
+.btn-1{
+    margin-right: 20px;
+}
+
+
+.mission-view{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.mission-view p{
+    text-align: center;
+    opacity: 0.5;
+    width: 50%;
+}
+
+
+.product-view{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #1c1c1c;
+    padding: 4% 0;
+    
+    
+}
+.product-view h1{
+    margin-top: 3%;
+    text-align: center;
+    font-family: 'Sniglet', cursive;
+    color: white;
+}
+
+
+.column{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 16px;
+    height: 80%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.507);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 2px solid #fff;
+    padding: 10% 0;
+    height: 100%;
+    color:#fff;
+    border-radius: 4%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .container {
+    padding: 2px 8px;
+    font-size: calc(70%);;
+
+  }
+
+.product-view:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.signup-view{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 4% 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    /* background-color:white; */
+    align-content: center;
+    width: 600px;
+    /* height: 100%; */
+    /* max-width: 400px; */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px; 
+    border: 4px solid #fff;
+    height: 80%;
+  
+  }
+
+  input[type=text],input[type=email],input[type=tel],input[type=password    ]{
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px 6px;
+    margin: 4px 0px;
+    color: #fff;
+    background-color:transparent;
+    border: 2px solid #fff;
+    font-size: 1em;
+  }
+
+  input[type=submit],input[type=button]{
+    width: 100%;
+    border-radius: 6px;
+    padding: 12px 8px;
+    margin: 4px 0px;
+    color: red;
+    background-color:#fff;
+    border:  2px solid #fff;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  input[type=submit]:hover,input[type=button]:hover{
+    color:#fff;
+    background-color:  transparent;
+    border:  2px solid #fff;
+  }
+
+  .signin-view{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 4% 0;
+}
+.signin-view .form
+{
+    margin: 8% auto;
+    /* padding: 10px; */
+    
+}
+.formout{
+    height: 84%;
+}
+
+.grid-view{
+    width: 100%;
+    height: auto;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(../images/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: 'Sniglet', cursive;
+    color: white;
+}
+
+.grid-view h1{
+    font-family: 'Sniglet', cursive;
+
+    padding-top: 3%;
+}
+
+.grid-view-card{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.507);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.403);
+    border: 2px solid #fff;
+    padding: 10% 0;
+    height: 100%;
+    color:#fff;
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.grid-column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.grid-column img {
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+
+.contactus-view{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.contactus-view a{
+    color: aliceblue;
+}
+
+
+  @media only screen and (max-width: 768px ) {
+    h1 {
+   
+      font-size: 200%;
+    }
+
+    .main-nav {
+        margin-top: 20px;
+    }
+    
+    .main-nav li {
+        margin-left: 20px;
+        font-size: 80%;
+        
+    }
+
+    .logo{
+        height: 80px;
+        margin-top: 10px;
+    }        
+
+
+    .btn {
+        margin: auto;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 80%;
+        padding: 8px 12px;
+        width: 200px;
+       
+    }
+
+     
+    .btn-1{
+        margin-right: 20px;
+    }
+      
+    .product-view{
+        height: auto;
+          }
+      
+    .signup-view,.signin-view{
+    height: auto;
+    }
+      
+    .column{
+        width: 50%;
+    }
+        
+    .form {
+        width: 80%;
+        
+    }
+    .grid-column {
+    flex: 50%;
+    max-width: 50%;
+    }
+
+  }
+
+  @media screen and (max-width:600px) {
+ 
+ 
+    h1 {
+        font-size: 180%;
+      }
+      
+    .main-nav {
+        display: none;
+        float: left;
+    } 
+
+    .bars-icon {
+        display: inline-block;
+        float: right;
+        margin: 30px 20px 0 0;
+    }
+
+    .main-nav li {
+        
+        display: block;
+        margin-top: 10px; 
+        font-size: 100%;
+
+    }
+    
+
+ /*  */
+    .product-view,.signup-view,.signin-view{
+        height: auto;
+          }
+    .signup-view,.signin-view{
+    height: 100hv;
+    }
+    .column {
+        width: 100%;
+          }
+
+    .mission-view p{
+        width: 100%;
+          }
+
+    
+    .form {
+        width: 94%;
+        margin: 3%;
+        }
+    }
+    
+              
+          
+
+@media only screen and (max-width: 460px ) {
+    
+    h1 {
+        font-size: 150%;
+      }
+      .main-nav li {
+        
+        display: block;
+        margin-top: 10px; 
+        font-size: 80%;
+
+    }
+      .btn {
+       display: block;
+       width: 90%;
+       margin: 20px auto;
+   } 
+   
+    .btn-1 {
+    margin-top: 40px;
+    }
+    
+    .product-view{
+        height: auto;
+          }
+    .signup-view,.signin-view{
+    height: 100hv;
+    }
+    .column {
+        width: 100%;
+          }
+
+    .mission-view p{
+        width: 100%;
+          }
+
+    
+    .form {
+        width: 94%;
+        margin: 3%;
+
+    }
+    
+    .grid-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px ) {
+      h1 {
+        font-size: 180%;
+      }
+      
+    .main-nav {
+        display: none;
+        float: left;
+    } 
+
+    .bars-icon {
+        display: inline-block;
+        float: right;
+        margin: 30px 20px 0 0;
+    }
+
+    .main-nav li {
+        
+        display: block;
+        margin-top: 10px; 
+        font-size: 100%;
+
+    }
+    
+}
